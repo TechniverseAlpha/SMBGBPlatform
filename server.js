@@ -62,7 +62,7 @@ app.post('/receive-request', async (req, res) => {
   sessions[sessionId] = { customer, agent, conversationId, timestamp: Date.now() };
   const quoteUrl = `${req.protocol}://${req.get('host')}/quote/${sessionId}`;
   
-  await postToRespond(customer.id, `🔗 Please fill out the quote: ${quoteUrl}`);
+  //await postToRespond('id:${customer.id}', ''🔗 Please fill out the quote: ${quoteUrl}'');
   res.json({ status: "OK", quoteLink: quoteUrl });
 });
 
@@ -103,10 +103,10 @@ app.post('/submit-quote', async (req, res) => {
   console.log("[ERP] Created quote", mockQuoteId, lines);
 
   // Notify Respond.io
-  await postToRespond(
-    customer.id,
-    `✅ Quote ${mockQuoteId} has been submitted to the ERP for processing.`
-  );
+await postToRespond(
+  `id:${session.customer.id}`,
+  `✅ Quote ${mockQuoteId} has been submitted to the ERP for processing.`
+);
 
   res.render('submitted', { company: COMPANY, quoteId: mockQuoteId, lines, agent: session.agent, customer: session.customer });
 });
