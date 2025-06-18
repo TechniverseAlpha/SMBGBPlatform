@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Request a Quote</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="{{company.logoUrl}}" alt="{{company.name}} Logo" class="logo">
+    <h1>{{company.name}} - Quote Request</h1>
+  </header>
+
+  <section class="info">
+    <div><strong>Agent:</strong> {{agent.name}} &lt;{{agent.email}}&gt;</div>
+    <div><strong>Customer:</strong> {{customer.name}} &lt;{{customer.email}}&gt;</div>
+    <div><strong>Phone:</strong> {{customer.phone}}</div>
+  </section>
+
+  <form action="/submit-quote" method="post" class="quote-form">
+    <input type="hidden" name="sessionId" value="{{sessionId}}">
+
+    {{#each catalog}}
+      <fieldset class="category">
+        <legend>{{this.category}}</legend>
+        {{#each this.items}}
+          <div class="product">
+            <div class="prod-info">
+              <h3>{{name}}</h3>
+              <p>{{desc}}</p>
+              <p class="price-stock">Price: ${{price}} | In Stock: {{stock}}</p>
+            </div>
+            <input type="number" name="qty_{{id}}" min="0" max="{{stock}}" placeholder="Qty">
+          </div>
+        {{/each}}
+      </fieldset>
+    {{/each}}
+
+    <button type="submit" class="submit-btn">Submit Quote</button>
+  </form>
+</body>
+</html>
