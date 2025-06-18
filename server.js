@@ -16,7 +16,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // In-memory storage
 const sessions = {};
-const COMPANY = { name: "AZDBlast", logoUrl: "/public/logo.png" };
+const COMPANY = { name: "AZDBlast Platform", logoUrl: "https://via.placeholder.com/200x60.png?text=Client+Company+Logo" };
 
 // Simulated product catalog
 const catalog = [
