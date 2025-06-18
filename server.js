@@ -56,15 +56,36 @@ const axios = require('axios');
 
 // Endpoint #1: Entry point from Respond.io shortcut
 app.post('/receive-request', async (req, res) => {
-  console.log(req.body);
   const { customer, agent, conversationId } = req.body;
-  const sessionId = crypto.randomBytes(16).toString('hex');
-  sessions[sessionId] = { customer, agent, conversationId, timestamp: Date.now() };
-  const quoteUrl = `${req.protocol}://${req.get('host')}/quote/${sessionId}`;
-  
-  //await postToRespond('id:${customer.id}', ''🔗 Please fill out the quote: ${quoteUrl}'');
-  res.json({ status: "OK", quoteLink: quoteUrl });
+
+  // Basic validation
+  if (!customer || !customer.id || !agent || !conversationId) {
+    return res.status(400).json({
+      status: "error",
+      message: "Missing required fields: customer.id, agent, or conversationId"
+    });
+  }
+
+  try {
+    const sessionId = crypto.randomBytes(16).toString('hex');
+    sessions[sessionId] = { customer, agent, conversationId, timestamp: Date.now() };
+    const quoteUrl = `${req.protocol}://${req.get('host')}/quote/${sessionId}`;
+
+    await postToRespond(
+      `id:${customer.id}`,
+      `🔗 Please fill out the quote here: ${quoteUrl}`
+    );
+
+    res.json({ status: "OK", quoteLink: quoteUrl, message: "Request for quote form received" });
+  } catch (error) {
+    console.error("Error in /receive-request:", error.message || error);
+    res.status(500).json({
+      status: "error",
+      message: "Something went wrong while creating the quote request"
+    });
+  }
 });
+
 
 // Endpoint #2: Render the quote form
 app.get('/quote/:sessionId', (req, res) => {
