@@ -76,7 +76,7 @@ app.post('/receive-request', async (req, res) => {
       `🔗 Please fill out the quote here: ${quoteUrl}`
     );
 
-    res.json({ status: "OK", quoteLink: quoteUrl, message: "Request for quote form received" });
+    res.json({ status: "OK", quoteLink: quoteUrl, message: "Request for quote form received. Use the link to complete the form" });
   } catch (error) {
     console.error("Error in /receive-request:", error.message || error);
     res.status(500).json({
