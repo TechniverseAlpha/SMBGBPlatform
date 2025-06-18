@@ -34,10 +34,10 @@ const catalog = JSON.parse(fs.readFileSync('./product_catalog.json', 'utf8'));
 // Simulate posting a comment to Respond.io via API
 const axios = require('axios');
 
-async function postToRespond(conversationId, message) {
+async function postToRespond(contactIdentifier, message) {
   try {
     await axios.post(
-      `https://app.respond.io/api/v2/conversations/${conversationId}/comments`,
+      `https://api.respond.io/v2/contact/${contactIdentifier}/comment`,
       { body: message },
       {
         headers: {
@@ -47,7 +47,7 @@ async function postToRespond(conversationId, message) {
         }
       }
     );
-    console.log(`[Respond.io] Sent message to conversation ${conversationId}`);
+    console.log(`[Respond.io] Sent message to conversation for contact ${contactIdentifier}`);
   } catch (err) {
     console.error('Respond.io API error:', err.response?.data || err.message);
   }
