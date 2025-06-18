@@ -32,9 +32,27 @@ const catalog = JSON.parse(fs.readFileSync('./product_catalog.json', 'utf8'));
 
 
 // Simulate posting a comment to Respond.io via API
-async function postToRespond(conversationId, text) {
-  console.log(`[Respond.io] Convo ${conversationId}: ${text}`);
+const axios = require('axios');
+
+async function postToRespond(conversationId, message) {
+  try {
+    await axios.post(
+      `https://app.respond.io/api/v2/conversations/${conversationId}/comments`,
+      { body: message },
+      {
+        headers: {
+          'Authorization': `Bearer ${process.env.RESPOND_API_KEY}`,  // Your Respond.io API key in .env
+          'Content-Type': 'application/json',
+          'X-API-Version': '2'
+        }
+      }
+    );
+    console.log(`[Respond.io] Sent message to conversation ${conversationId}`);
+  } catch (err) {
+    console.error('Respond.io API error:', err.response?.data || err.message);
+  }
 }
+
 
 // Endpoint #1: Entry point from Respond.io shortcut
 app.post('/receive-request', async (req, res) => {
@@ -84,7 +102,11 @@ app.post('/submit-quote', async (req, res) => {
   console.log("[ERP] Created quote", mockQuoteId, lines);
 
   // Notify Respond.io
-  await postToRespond(session.conversationId, `✅ Quote created: ${mockQuoteId}`);
+  await postToRespond(
+    session.conversationId,
+    `✅ Quote ${mockQuoteId} has been submitted to the ERP for processing.`
+  );
+
   res.render('submitted', { company: COMPANY, quoteId: mockQuoteId, lines, agent: session.agent, customer: session.customer });
 });
 
