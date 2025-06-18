@@ -34,34 +34,35 @@ const catalog = JSON.parse(fs.readFileSync('./product_catalog.json', 'utf8'));
 // Simulate posting a comment to Respond.io via API
 const axios = require('axios');
 
-async function postToRespond(contactIdentifier, message) {
+ async function postToRespond(contactIdentifier, message) {
   try {
     await axios.post(
       `https://api.respond.io/v2/contact/${contactIdentifier}/comment`,
-      { body: message },
+      { text: message }, // ← API expects "text", not "body"
       {
         headers: {
-          'Authorization': `Bearer ${process.env.RESPOND_API_KEY}`,  // Your Respond.io API key in .env
+          'Authorization': `Bearer ${process.env.RESPOND_API_KEY}`,
           'Content-Type': 'application/json',
-          'X-API-Version': '2'
         }
       }
     );
-    console.log(`[Respond.io] Sent message to conversation for contact ${contactIdentifier}`);
+    console.log(`[Respond.io] Sent message to contact ${contactIdentifier}`);
   } catch (err) {
     console.error('Respond.io API error:', err.response?.data || err.message);
   }
 }
 
 
+
 // Endpoint #1: Entry point from Respond.io shortcut
 app.post('/receive-request', async (req, res) => {
+  console.log(req.body);
   const { customer, agent, conversationId } = req.body;
   const sessionId = crypto.randomBytes(16).toString('hex');
   sessions[sessionId] = { customer, agent, conversationId, timestamp: Date.now() };
   const quoteUrl = `${req.protocol}://${req.get('host')}/quote/${sessionId}`;
   
-  await postToRespond(conversationId, `🔗 Please fill out the quote: ${quoteUrl}`);
+  await postToRespond(customer.id, `🔗 Please fill out the quote: ${quoteUrl}`);
   res.json({ status: "OK", quoteLink: quoteUrl });
 });
 
@@ -103,7 +104,7 @@ app.post('/submit-quote', async (req, res) => {
 
   // Notify Respond.io
   await postToRespond(
-    session.conversationId,
+    customer.id,
     `✅ Quote ${mockQuoteId} has been submitted to the ERP for processing.`
   );
 
