@@ -15,12 +15,19 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
+const hbs = require('hbs'); // make sure this line exists
+
+// Register 'json' helper to stringify data
+hbs.registerHelper('json', function (context) {
+  return JSON.stringify(context);
+});
+
+
 // In-memory storage
 const sessions = {};
 const COMPANY = { name: "AZDBlast Platform", logoUrl: "https://via.placeholder.com/200x60.png?text=Client+Company+Logo" };
 
 // Simulated product catalogconst 
-fs = require('fs');
 const catalog = JSON.parse(fs.readFileSync('./product_catalog.json', 'utf8'));
 
 

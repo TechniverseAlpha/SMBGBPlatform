@@ -14,12 +14,14 @@
 
       const selectedCat = catalog.find(c => c.category === category);
       selectedCat?.items.forEach(item => {
-        if (item.stock > 0) {
-          const option = document.createElement("option");
-          option.value = item.id;
-          option.text = `${item.name} - $${item.price} (In Stock: ${item.stock})`;
-          productSelect.appendChild(option);
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.text = `${item.name} - R${item.price} (In Stock: ${item.stock})`;
+        if (item.stock === 0) {
+          option.disabled = true;
+          option.text += " - OUT OF STOCK";
         }
+        productSelect.appendChild(option);
       });
     }
 
@@ -33,9 +35,10 @@
 
       const selectedCat = catalog.find(c => c.category === category);
       const product = selectedCat.items.find(i => i.id === productId);
+      if (product.stock === 0) return; // Just in case
 
       const itemRow = document.createElement("li");
-      itemRow.innerText = `${product.name} - Qty: ${qty} - $${product.price} each`;
+      itemRow.innerText = `${product.name} - Qty: ${qty} - R${product.price} each`;
       const input = document.createElement("input");
       input.type = "hidden";
       input.name = `qty_${product.id}`;
@@ -44,6 +47,8 @@
 
       quoteList.appendChild(itemRow);
     }
+
+    window.onload = updateProductList; // Load products for default category on load
   </script>
 </head>
 <body>
