@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const path = require('path');
 const app = express();
+const fs = require('fs');
 const port = process.env.PORT || 3000;
 
 // Handlebars setup
@@ -18,23 +19,10 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 const sessions = {};
 const COMPANY = { name: "AZDBlast Platform", logoUrl: "https://via.placeholder.com/200x60.png?text=Client+Company+Logo" };
 
-// Simulated product catalog
-const catalog = [
-  {
-    category: "Widgets",
-    items: [
-      { id: "w1", name: "Red Widget", desc: "High-quality red widget", price: 99.99, stock: 10 },
-      { id: "w2", name: "Blue Widget", desc: "Durable blue widget", price: 109.49, stock: 5 }
-    ]
-  },
-  {
-    category: "Gadgets",
-    items: [
-      { id: "g1", name: "Gizmo Pro", desc: "Premium gadget tool", price: 249.00, stock: 3 },
-      { id: "g2", name: "Gizmo Lite", desc: "Budget-friendly version", price: 149.50, stock: 8 }
-    ]
-  }
-];
+// Simulated product catalogconst 
+fs = require('fs');
+const catalog = JSON.parse(fs.readFileSync('./product_catalog.json', 'utf8'));
+
 
 // Simulate posting a comment to Respond.io via API
 async function postToRespond(conversationId, text) {

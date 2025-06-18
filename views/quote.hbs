@@ -4,6 +4,47 @@
   <meta charset="utf-8">
   <title>Request a Quote</title>
   <link rel="stylesheet" href="/public/style.css">
+  <script>
+    let catalog = {{{json catalog}}};
+
+    function updateProductList() {
+      const category = document.getElementById("category").value;
+      const productSelect = document.getElementById("product");
+      productSelect.innerHTML = "";
+
+      const selectedCat = catalog.find(c => c.category === category);
+      selectedCat?.items.forEach(item => {
+        if (item.stock > 0) {
+          const option = document.createElement("option");
+          option.value = item.id;
+          option.text = `${item.name} - $${item.price} (In Stock: ${item.stock})`;
+          productSelect.appendChild(option);
+        }
+      });
+    }
+
+    function addToQuote() {
+      const category = document.getElementById("category").value;
+      const productId = document.getElementById("product").value;
+      const qty = parseInt(document.getElementById("qty").value);
+      const quoteList = document.getElementById("quoteItems");
+
+      if (!productId || qty <= 0) return;
+
+      const selectedCat = catalog.find(c => c.category === category);
+      const product = selectedCat.items.find(i => i.id === productId);
+
+      const itemRow = document.createElement("li");
+      itemRow.innerText = `${product.name} - Qty: ${qty} - $${product.price} each`;
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = `qty_${product.id}`;
+      input.value = qty;
+      itemRow.appendChild(input);
+
+      quoteList.appendChild(itemRow);
+    }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -20,21 +61,28 @@
   <form action="/submit-quote" method="post" class="quote-form">
     <input type="hidden" name="sessionId" value="{{sessionId}}">
 
-    {{#each catalog}}
-      <fieldset class="category">
-        <legend>{{this.category}}</legend>
-        {{#each this.items}}
-          <div class="product">
-            <div class="prod-info">
-              <h3>{{name}}</h3>
-              <p>{{desc}}</p>
-              <p class="price-stock">Price: ${{price}} | In Stock: {{stock}}</p>
-            </div>
-            <input type="number" name="qty_{{id}}" min="0" max="{{stock}}" placeholder="Qty">
-          </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select id="category" onchange="updateProductList()">
+        {{#each catalog}}
+          <option value="{{this.category}}">{{this.category}}</option>
         {{/each}}
-      </fieldset>
-    {{/each}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="product">Product</label>
+      <select id="product"></select>
+    </div>
+
+    <div class="form-group">
+      <label for="qty">Quantity</label>
+      <input type="number" id="qty" min="1" value="1">
+    </div>
+
+    <button type="button" onclick="addToQuote()">Add to Quote</button>
+
+    <ul id="quoteItems"></ul>
 
     <button type="submit" class="submit-btn">Submit Quote</button>
   </form>

@@ -1,0 +1,1452 @@
+[
+  {
+    "category": "Appliances",
+    "items": [
+      {
+        "id": "APP01",
+        "name": "Appliance 1",
+        "desc": "A premium appliances item, model 1",
+        "price": 1876.95,
+        "stock": 30
+      },
+      {
+        "id": "APP02",
+        "name": "Appliance 2",
+        "desc": "A premium appliances item, model 2",
+        "price": 173.97,
+        "stock": 14
+      },
+      {
+        "id": "APP03",
+        "name": "Appliance 3",
+        "desc": "A premium appliances item, model 3",
+        "price": 1310.54,
+        "stock": 13
+      },
+      {
+        "id": "APP04",
+        "name": "Appliance 4",
+        "desc": "A premium appliances item, model 4",
+        "price": 157.01,
+        "stock": 0
+      },
+      {
+        "id": "APP05",
+        "name": "Appliance 5",
+        "desc": "A premium appliances item, model 5",
+        "price": 1437.14,
+        "stock": 29
+      },
+      {
+        "id": "APP06",
+        "name": "Appliance 6",
+        "desc": "A premium appliances item, model 6",
+        "price": 1628.83,
+        "stock": 16
+      },
+      {
+        "id": "APP07",
+        "name": "Appliance 7",
+        "desc": "A premium appliances item, model 7",
+        "price": 137.21,
+        "stock": 28
+      },
+      {
+        "id": "APP08",
+        "name": "Appliance 8",
+        "desc": "A premium appliances item, model 8",
+        "price": 898.42,
+        "stock": 0
+      },
+      {
+        "id": "APP09",
+        "name": "Appliance 9",
+        "desc": "A premium appliances item, model 9",
+        "price": 1278.8,
+        "stock": 2
+      },
+      {
+        "id": "APP10",
+        "name": "Appliance 10",
+        "desc": "A premium appliances item, model 10",
+        "price": 902.23,
+        "stock": 15
+      },
+      {
+        "id": "APP11",
+        "name": "Appliance 11",
+        "desc": "A premium appliances item, model 11",
+        "price": 452.99,
+        "stock": 18
+      },
+      {
+        "id": "APP12",
+        "name": "Appliance 12",
+        "desc": "A premium appliances item, model 12",
+        "price": 2275.24,
+        "stock": 0
+      },
+      {
+        "id": "APP13",
+        "name": "Appliance 13",
+        "desc": "A premium appliances item, model 13",
+        "price": 364.87,
+        "stock": 8
+      },
+      {
+        "id": "APP14",
+        "name": "Appliance 14",
+        "desc": "A premium appliances item, model 14",
+        "price": 1729.58,
+        "stock": 22
+      },
+      {
+        "id": "APP15",
+        "name": "Appliance 15",
+        "desc": "A premium appliances item, model 15",
+        "price": 743.88,
+        "stock": 18
+      },
+      {
+        "id": "APP16",
+        "name": "Appliance 16",
+        "desc": "A premium appliances item, model 16",
+        "price": 431.7,
+        "stock": 0
+      },
+      {
+        "id": "APP17",
+        "name": "Appliance 17",
+        "desc": "A premium appliances item, model 17",
+        "price": 1778.12,
+        "stock": 25
+      },
+      {
+        "id": "APP18",
+        "name": "Appliance 18",
+        "desc": "A premium appliances item, model 18",
+        "price": 1499.51,
+        "stock": 22
+      },
+      {
+        "id": "APP19",
+        "name": "Appliance 19",
+        "desc": "A premium appliances item, model 19",
+        "price": 247.15,
+        "stock": 50
+      },
+      {
+        "id": "APP20",
+        "name": "Appliance 20",
+        "desc": "A premium appliances item, model 20",
+        "price": 1694.33,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Smartphones",
+    "items": [
+      {
+        "id": "SMA01",
+        "name": "Smartphone 1",
+        "desc": "A premium smartphones item, model 1",
+        "price": 823.55,
+        "stock": 21
+      },
+      {
+        "id": "SMA02",
+        "name": "Smartphone 2",
+        "desc": "A premium smartphones item, model 2",
+        "price": 961.81,
+        "stock": 3
+      },
+      {
+        "id": "SMA03",
+        "name": "Smartphone 3",
+        "desc": "A premium smartphones item, model 3",
+        "price": 2258.33,
+        "stock": 1
+      },
+      {
+        "id": "SMA04",
+        "name": "Smartphone 4",
+        "desc": "A premium smartphones item, model 4",
+        "price": 450.59,
+        "stock": 0
+      },
+      {
+        "id": "SMA05",
+        "name": "Smartphone 5",
+        "desc": "A premium smartphones item, model 5",
+        "price": 1692.2,
+        "stock": 13
+      },
+      {
+        "id": "SMA06",
+        "name": "Smartphone 6",
+        "desc": "A premium smartphones item, model 6",
+        "price": 1247.67,
+        "stock": 32
+      },
+      {
+        "id": "SMA07",
+        "name": "Smartphone 7",
+        "desc": "A premium smartphones item, model 7",
+        "price": 1689.75,
+        "stock": 11
+      },
+      {
+        "id": "SMA08",
+        "name": "Smartphone 8",
+        "desc": "A premium smartphones item, model 8",
+        "price": 2375.97,
+        "stock": 0
+      },
+      {
+        "id": "SMA09",
+        "name": "Smartphone 9",
+        "desc": "A premium smartphones item, model 9",
+        "price": 1972.93,
+        "stock": 33
+      },
+      {
+        "id": "SMA10",
+        "name": "Smartphone 10",
+        "desc": "A premium smartphones item, model 10",
+        "price": 360.1,
+        "stock": 24
+      },
+      {
+        "id": "SMA11",
+        "name": "Smartphone 11",
+        "desc": "A premium smartphones item, model 11",
+        "price": 2170.85,
+        "stock": 40
+      },
+      {
+        "id": "SMA12",
+        "name": "Smartphone 12",
+        "desc": "A premium smartphones item, model 12",
+        "price": 1146.66,
+        "stock": 0
+      },
+      {
+        "id": "SMA13",
+        "name": "Smartphone 13",
+        "desc": "A premium smartphones item, model 13",
+        "price": 1102.71,
+        "stock": 18
+      },
+      {
+        "id": "SMA14",
+        "name": "Smartphone 14",
+        "desc": "A premium smartphones item, model 14",
+        "price": 2063.04,
+        "stock": 3
+      },
+      {
+        "id": "SMA15",
+        "name": "Smartphone 15",
+        "desc": "A premium smartphones item, model 15",
+        "price": 1872.07,
+        "stock": 47
+      },
+      {
+        "id": "SMA16",
+        "name": "Smartphone 16",
+        "desc": "A premium smartphones item, model 16",
+        "price": 1872.93,
+        "stock": 0
+      },
+      {
+        "id": "SMA17",
+        "name": "Smartphone 17",
+        "desc": "A premium smartphones item, model 17",
+        "price": 839.92,
+        "stock": 6
+      },
+      {
+        "id": "SMA18",
+        "name": "Smartphone 18",
+        "desc": "A premium smartphones item, model 18",
+        "price": 925.53,
+        "stock": 43
+      },
+      {
+        "id": "SMA19",
+        "name": "Smartphone 19",
+        "desc": "A premium smartphones item, model 19",
+        "price": 980.54,
+        "stock": 42
+      },
+      {
+        "id": "SMA20",
+        "name": "Smartphone 20",
+        "desc": "A premium smartphones item, model 20",
+        "price": 2027.84,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Laptops",
+    "items": [
+      {
+        "id": "LAP01",
+        "name": "Laptop 1",
+        "desc": "A premium laptops item, model 1",
+        "price": 875.29,
+        "stock": 32
+      },
+      {
+        "id": "LAP02",
+        "name": "Laptop 2",
+        "desc": "A premium laptops item, model 2",
+        "price": 1055.21,
+        "stock": 7
+      },
+      {
+        "id": "LAP03",
+        "name": "Laptop 3",
+        "desc": "A premium laptops item, model 3",
+        "price": 1243.74,
+        "stock": 25
+      },
+      {
+        "id": "LAP04",
+        "name": "Laptop 4",
+        "desc": "A premium laptops item, model 4",
+        "price": 1330.44,
+        "stock": 0
+      },
+      {
+        "id": "LAP05",
+        "name": "Laptop 5",
+        "desc": "A premium laptops item, model 5",
+        "price": 2293.25,
+        "stock": 18
+      },
+      {
+        "id": "LAP06",
+        "name": "Laptop 6",
+        "desc": "A premium laptops item, model 6",
+        "price": 285.93,
+        "stock": 42
+      },
+      {
+        "id": "LAP07",
+        "name": "Laptop 7",
+        "desc": "A premium laptops item, model 7",
+        "price": 704.23,
+        "stock": 18
+      },
+      {
+        "id": "LAP08",
+        "name": "Laptop 8",
+        "desc": "A premium laptops item, model 8",
+        "price": 706.61,
+        "stock": 0
+      },
+      {
+        "id": "LAP09",
+        "name": "Laptop 9",
+        "desc": "A premium laptops item, model 9",
+        "price": 1073.79,
+        "stock": 36
+      },
+      {
+        "id": "LAP10",
+        "name": "Laptop 10",
+        "desc": "A premium laptops item, model 10",
+        "price": 2268.81,
+        "stock": 44
+      },
+      {
+        "id": "LAP11",
+        "name": "Laptop 11",
+        "desc": "A premium laptops item, model 11",
+        "price": 1053.08,
+        "stock": 9
+      },
+      {
+        "id": "LAP12",
+        "name": "Laptop 12",
+        "desc": "A premium laptops item, model 12",
+        "price": 597.05,
+        "stock": 0
+      },
+      {
+        "id": "LAP13",
+        "name": "Laptop 13",
+        "desc": "A premium laptops item, model 13",
+        "price": 1618.69,
+        "stock": 27
+      },
+      {
+        "id": "LAP14",
+        "name": "Laptop 14",
+        "desc": "A premium laptops item, model 14",
+        "price": 1152.85,
+        "stock": 19
+      },
+      {
+        "id": "LAP15",
+        "name": "Laptop 15",
+        "desc": "A premium laptops item, model 15",
+        "price": 296.01,
+        "stock": 42
+      },
+      {
+        "id": "LAP16",
+        "name": "Laptop 16",
+        "desc": "A premium laptops item, model 16",
+        "price": 1540.28,
+        "stock": 0
+      },
+      {
+        "id": "LAP17",
+        "name": "Laptop 17",
+        "desc": "A premium laptops item, model 17",
+        "price": 1659.44,
+        "stock": 7
+      },
+      {
+        "id": "LAP18",
+        "name": "Laptop 18",
+        "desc": "A premium laptops item, model 18",
+        "price": 1423.3,
+        "stock": 42
+      },
+      {
+        "id": "LAP19",
+        "name": "Laptop 19",
+        "desc": "A premium laptops item, model 19",
+        "price": 2000.89,
+        "stock": 28
+      },
+      {
+        "id": "LAP20",
+        "name": "Laptop 20",
+        "desc": "A premium laptops item, model 20",
+        "price": 1577.03,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Tablets",
+    "items": [
+      {
+        "id": "TAB01",
+        "name": "Tablet 1",
+        "desc": "A premium tablets item, model 1",
+        "price": 928.35,
+        "stock": 21
+      },
+      {
+        "id": "TAB02",
+        "name": "Tablet 2",
+        "desc": "A premium tablets item, model 2",
+        "price": 2232.61,
+        "stock": 10
+      },
+      {
+        "id": "TAB03",
+        "name": "Tablet 3",
+        "desc": "A premium tablets item, model 3",
+        "price": 1779.78,
+        "stock": 18
+      },
+      {
+        "id": "TAB04",
+        "name": "Tablet 4",
+        "desc": "A premium tablets item, model 4",
+        "price": 830.71,
+        "stock": 0
+      },
+      {
+        "id": "TAB05",
+        "name": "Tablet 5",
+        "desc": "A premium tablets item, model 5",
+        "price": 1150.44,
+        "stock": 24
+      },
+      {
+        "id": "TAB06",
+        "name": "Tablet 6",
+        "desc": "A premium tablets item, model 6",
+        "price": 181.84,
+        "stock": 44
+      },
+      {
+        "id": "TAB07",
+        "name": "Tablet 7",
+        "desc": "A premium tablets item, model 7",
+        "price": 85.24,
+        "stock": 32
+      },
+      {
+        "id": "TAB08",
+        "name": "Tablet 8",
+        "desc": "A premium tablets item, model 8",
+        "price": 873.1,
+        "stock": 0
+      },
+      {
+        "id": "TAB09",
+        "name": "Tablet 9",
+        "desc": "A premium tablets item, model 9",
+        "price": 1124.67,
+        "stock": 12
+      },
+      {
+        "id": "TAB10",
+        "name": "Tablet 10",
+        "desc": "A premium tablets item, model 10",
+        "price": 488.77,
+        "stock": 27
+      },
+      {
+        "id": "TAB11",
+        "name": "Tablet 11",
+        "desc": "A premium tablets item, model 11",
+        "price": 329.95,
+        "stock": 46
+      },
+      {
+        "id": "TAB12",
+        "name": "Tablet 12",
+        "desc": "A premium tablets item, model 12",
+        "price": 816.95,
+        "stock": 0
+      },
+      {
+        "id": "TAB13",
+        "name": "Tablet 13",
+        "desc": "A premium tablets item, model 13",
+        "price": 989.57,
+        "stock": 5
+      },
+      {
+        "id": "TAB14",
+        "name": "Tablet 14",
+        "desc": "A premium tablets item, model 14",
+        "price": 819.37,
+        "stock": 16
+      },
+      {
+        "id": "TAB15",
+        "name": "Tablet 15",
+        "desc": "A premium tablets item, model 15",
+        "price": 1413.98,
+        "stock": 35
+      },
+      {
+        "id": "TAB16",
+        "name": "Tablet 16",
+        "desc": "A premium tablets item, model 16",
+        "price": 379.56,
+        "stock": 0
+      },
+      {
+        "id": "TAB17",
+        "name": "Tablet 17",
+        "desc": "A premium tablets item, model 17",
+        "price": 2312.69,
+        "stock": 21
+      },
+      {
+        "id": "TAB18",
+        "name": "Tablet 18",
+        "desc": "A premium tablets item, model 18",
+        "price": 1743.2,
+        "stock": 48
+      },
+      {
+        "id": "TAB19",
+        "name": "Tablet 19",
+        "desc": "A premium tablets item, model 19",
+        "price": 1820.5,
+        "stock": 37
+      },
+      {
+        "id": "TAB20",
+        "name": "Tablet 20",
+        "desc": "A premium tablets item, model 20",
+        "price": 867.9,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Televisions",
+    "items": [
+      {
+        "id": "TEL01",
+        "name": "Television 1",
+        "desc": "A premium televisions item, model 1",
+        "price": 1593.45,
+        "stock": 47
+      },
+      {
+        "id": "TEL02",
+        "name": "Television 2",
+        "desc": "A premium televisions item, model 2",
+        "price": 2076.06,
+        "stock": 18
+      },
+      {
+        "id": "TEL03",
+        "name": "Television 3",
+        "desc": "A premium televisions item, model 3",
+        "price": 709.52,
+        "stock": 32
+      },
+      {
+        "id": "TEL04",
+        "name": "Television 4",
+        "desc": "A premium televisions item, model 4",
+        "price": 403.7,
+        "stock": 0
+      },
+      {
+        "id": "TEL05",
+        "name": "Television 5",
+        "desc": "A premium televisions item, model 5",
+        "price": 1076.37,
+        "stock": 4
+      },
+      {
+        "id": "TEL06",
+        "name": "Television 6",
+        "desc": "A premium televisions item, model 6",
+        "price": 698.95,
+        "stock": 38
+      },
+      {
+        "id": "TEL07",
+        "name": "Television 7",
+        "desc": "A premium televisions item, model 7",
+        "price": 87.97,
+        "stock": 6
+      },
+      {
+        "id": "TEL08",
+        "name": "Television 8",
+        "desc": "A premium televisions item, model 8",
+        "price": 2205.46,
+        "stock": 0
+      },
+      {
+        "id": "TEL09",
+        "name": "Television 9",
+        "desc": "A premium televisions item, model 9",
+        "price": 2248.53,
+        "stock": 9
+      },
+      {
+        "id": "TEL10",
+        "name": "Television 10",
+        "desc": "A premium televisions item, model 10",
+        "price": 407.25,
+        "stock": 19
+      },
+      {
+        "id": "TEL11",
+        "name": "Television 11",
+        "desc": "A premium televisions item, model 11",
+        "price": 1695.0,
+        "stock": 28
+      },
+      {
+        "id": "TEL12",
+        "name": "Television 12",
+        "desc": "A premium televisions item, model 12",
+        "price": 317.31,
+        "stock": 0
+      },
+      {
+        "id": "TEL13",
+        "name": "Television 13",
+        "desc": "A premium televisions item, model 13",
+        "price": 1804.35,
+        "stock": 38
+      },
+      {
+        "id": "TEL14",
+        "name": "Television 14",
+        "desc": "A premium televisions item, model 14",
+        "price": 1210.72,
+        "stock": 14
+      },
+      {
+        "id": "TEL15",
+        "name": "Television 15",
+        "desc": "A premium televisions item, model 15",
+        "price": 1459.14,
+        "stock": 30
+      },
+      {
+        "id": "TEL16",
+        "name": "Television 16",
+        "desc": "A premium televisions item, model 16",
+        "price": 2335.58,
+        "stock": 0
+      },
+      {
+        "id": "TEL17",
+        "name": "Television 17",
+        "desc": "A premium televisions item, model 17",
+        "price": 1505.45,
+        "stock": 18
+      },
+      {
+        "id": "TEL18",
+        "name": "Television 18",
+        "desc": "A premium televisions item, model 18",
+        "price": 1093.93,
+        "stock": 38
+      },
+      {
+        "id": "TEL19",
+        "name": "Television 19",
+        "desc": "A premium televisions item, model 19",
+        "price": 1389.53,
+        "stock": 19
+      },
+      {
+        "id": "TEL20",
+        "name": "Television 20",
+        "desc": "A premium televisions item, model 20",
+        "price": 1279.93,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Cameras",
+    "items": [
+      {
+        "id": "CAM01",
+        "name": "Camera 1",
+        "desc": "A premium cameras item, model 1",
+        "price": 985.51,
+        "stock": 12
+      },
+      {
+        "id": "CAM02",
+        "name": "Camera 2",
+        "desc": "A premium cameras item, model 2",
+        "price": 259.77,
+        "stock": 50
+      },
+      {
+        "id": "CAM03",
+        "name": "Camera 3",
+        "desc": "A premium cameras item, model 3",
+        "price": 2005.09,
+        "stock": 16
+      },
+      {
+        "id": "CAM04",
+        "name": "Camera 4",
+        "desc": "A premium cameras item, model 4",
+        "price": 1391.78,
+        "stock": 0
+      },
+      {
+        "id": "CAM05",
+        "name": "Camera 5",
+        "desc": "A premium cameras item, model 5",
+        "price": 366.4,
+        "stock": 24
+      },
+      {
+        "id": "CAM06",
+        "name": "Camera 6",
+        "desc": "A premium cameras item, model 6",
+        "price": 2350.88,
+        "stock": 18
+      },
+      {
+        "id": "CAM07",
+        "name": "Camera 7",
+        "desc": "A premium cameras item, model 7",
+        "price": 868.88,
+        "stock": 29
+      },
+      {
+        "id": "CAM08",
+        "name": "Camera 8",
+        "desc": "A premium cameras item, model 8",
+        "price": 300.95,
+        "stock": 0
+      },
+      {
+        "id": "CAM09",
+        "name": "Camera 9",
+        "desc": "A premium cameras item, model 9",
+        "price": 789.45,
+        "stock": 48
+      },
+      {
+        "id": "CAM10",
+        "name": "Camera 10",
+        "desc": "A premium cameras item, model 10",
+        "price": 2178.72,
+        "stock": 34
+      },
+      {
+        "id": "CAM11",
+        "name": "Camera 11",
+        "desc": "A premium cameras item, model 11",
+        "price": 454.88,
+        "stock": 23
+      },
+      {
+        "id": "CAM12",
+        "name": "Camera 12",
+        "desc": "A premium cameras item, model 12",
+        "price": 472.55,
+        "stock": 0
+      },
+      {
+        "id": "CAM13",
+        "name": "Camera 13",
+        "desc": "A premium cameras item, model 13",
+        "price": 1134.56,
+        "stock": 3
+      },
+      {
+        "id": "CAM14",
+        "name": "Camera 14",
+        "desc": "A premium cameras item, model 14",
+        "price": 897.36,
+        "stock": 4
+      },
+      {
+        "id": "CAM15",
+        "name": "Camera 15",
+        "desc": "A premium cameras item, model 15",
+        "price": 661.41,
+        "stock": 40
+      },
+      {
+        "id": "CAM16",
+        "name": "Camera 16",
+        "desc": "A premium cameras item, model 16",
+        "price": 117.74,
+        "stock": 0
+      },
+      {
+        "id": "CAM17",
+        "name": "Camera 17",
+        "desc": "A premium cameras item, model 17",
+        "price": 1630.69,
+        "stock": 28
+      },
+      {
+        "id": "CAM18",
+        "name": "Camera 18",
+        "desc": "A premium cameras item, model 18",
+        "price": 1310.31,
+        "stock": 3
+      },
+      {
+        "id": "CAM19",
+        "name": "Camera 19",
+        "desc": "A premium cameras item, model 19",
+        "price": 71.64,
+        "stock": 8
+      },
+      {
+        "id": "CAM20",
+        "name": "Camera 20",
+        "desc": "A premium cameras item, model 20",
+        "price": 525.77,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Gaming Consoles",
+    "items": [
+      {
+        "id": "GAM01",
+        "name": "Gaming Console 1",
+        "desc": "A premium gaming consoles item, model 1",
+        "price": 569.01,
+        "stock": 7
+      },
+      {
+        "id": "GAM02",
+        "name": "Gaming Console 2",
+        "desc": "A premium gaming consoles item, model 2",
+        "price": 812.4,
+        "stock": 34
+      },
+      {
+        "id": "GAM03",
+        "name": "Gaming Console 3",
+        "desc": "A premium gaming consoles item, model 3",
+        "price": 1114.06,
+        "stock": 31
+      },
+      {
+        "id": "GAM04",
+        "name": "Gaming Console 4",
+        "desc": "A premium gaming consoles item, model 4",
+        "price": 644.25,
+        "stock": 0
+      },
+      {
+        "id": "GAM05",
+        "name": "Gaming Console 5",
+        "desc": "A premium gaming consoles item, model 5",
+        "price": 841.75,
+        "stock": 43
+      },
+      {
+        "id": "GAM06",
+        "name": "Gaming Console 6",
+        "desc": "A premium gaming consoles item, model 6",
+        "price": 2483.35,
+        "stock": 3
+      },
+      {
+        "id": "GAM07",
+        "name": "Gaming Console 7",
+        "desc": "A premium gaming consoles item, model 7",
+        "price": 503.01,
+        "stock": 12
+      },
+      {
+        "id": "GAM08",
+        "name": "Gaming Console 8",
+        "desc": "A premium gaming consoles item, model 8",
+        "price": 2349.47,
+        "stock": 0
+      },
+      {
+        "id": "GAM09",
+        "name": "Gaming Console 9",
+        "desc": "A premium gaming consoles item, model 9",
+        "price": 1429.6,
+        "stock": 31
+      },
+      {
+        "id": "GAM10",
+        "name": "Gaming Console 10",
+        "desc": "A premium gaming consoles item, model 10",
+        "price": 1144.43,
+        "stock": 44
+      },
+      {
+        "id": "GAM11",
+        "name": "Gaming Console 11",
+        "desc": "A premium gaming consoles item, model 11",
+        "price": 925.63,
+        "stock": 27
+      },
+      {
+        "id": "GAM12",
+        "name": "Gaming Console 12",
+        "desc": "A premium gaming consoles item, model 12",
+        "price": 1783.63,
+        "stock": 0
+      },
+      {
+        "id": "GAM13",
+        "name": "Gaming Console 13",
+        "desc": "A premium gaming consoles item, model 13",
+        "price": 1729.05,
+        "stock": 35
+      },
+      {
+        "id": "GAM14",
+        "name": "Gaming Console 14",
+        "desc": "A premium gaming consoles item, model 14",
+        "price": 1724.93,
+        "stock": 18
+      },
+      {
+        "id": "GAM15",
+        "name": "Gaming Console 15",
+        "desc": "A premium gaming consoles item, model 15",
+        "price": 925.02,
+        "stock": 38
+      },
+      {
+        "id": "GAM16",
+        "name": "Gaming Console 16",
+        "desc": "A premium gaming consoles item, model 16",
+        "price": 81.22,
+        "stock": 0
+      },
+      {
+        "id": "GAM17",
+        "name": "Gaming Console 17",
+        "desc": "A premium gaming consoles item, model 17",
+        "price": 1473.68,
+        "stock": 33
+      },
+      {
+        "id": "GAM18",
+        "name": "Gaming Console 18",
+        "desc": "A premium gaming consoles item, model 18",
+        "price": 287.07,
+        "stock": 40
+      },
+      {
+        "id": "GAM19",
+        "name": "Gaming Console 19",
+        "desc": "A premium gaming consoles item, model 19",
+        "price": 1565.65,
+        "stock": 4
+      },
+      {
+        "id": "GAM20",
+        "name": "Gaming Console 20",
+        "desc": "A premium gaming consoles item, model 20",
+        "price": 1431.51,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Wearables",
+    "items": [
+      {
+        "id": "WEA01",
+        "name": "Wearable 1",
+        "desc": "A premium wearables item, model 1",
+        "price": 2446.55,
+        "stock": 46
+      },
+      {
+        "id": "WEA02",
+        "name": "Wearable 2",
+        "desc": "A premium wearables item, model 2",
+        "price": 2417.66,
+        "stock": 24
+      },
+      {
+        "id": "WEA03",
+        "name": "Wearable 3",
+        "desc": "A premium wearables item, model 3",
+        "price": 293.74,
+        "stock": 25
+      },
+      {
+        "id": "WEA04",
+        "name": "Wearable 4",
+        "desc": "A premium wearables item, model 4",
+        "price": 412.14,
+        "stock": 0
+      },
+      {
+        "id": "WEA05",
+        "name": "Wearable 5",
+        "desc": "A premium wearables item, model 5",
+        "price": 808.35,
+        "stock": 13
+      },
+      {
+        "id": "WEA06",
+        "name": "Wearable 6",
+        "desc": "A premium wearables item, model 6",
+        "price": 368.63,
+        "stock": 36
+      },
+      {
+        "id": "WEA07",
+        "name": "Wearable 7",
+        "desc": "A premium wearables item, model 7",
+        "price": 1825.08,
+        "stock": 28
+      },
+      {
+        "id": "WEA08",
+        "name": "Wearable 8",
+        "desc": "A premium wearables item, model 8",
+        "price": 959.12,
+        "stock": 0
+      },
+      {
+        "id": "WEA09",
+        "name": "Wearable 9",
+        "desc": "A premium wearables item, model 9",
+        "price": 1894.1,
+        "stock": 28
+      },
+      {
+        "id": "WEA10",
+        "name": "Wearable 10",
+        "desc": "A premium wearables item, model 10",
+        "price": 1564.02,
+        "stock": 3
+      },
+      {
+        "id": "WEA11",
+        "name": "Wearable 11",
+        "desc": "A premium wearables item, model 11",
+        "price": 61.98,
+        "stock": 34
+      },
+      {
+        "id": "WEA12",
+        "name": "Wearable 12",
+        "desc": "A premium wearables item, model 12",
+        "price": 154.17,
+        "stock": 0
+      },
+      {
+        "id": "WEA13",
+        "name": "Wearable 13",
+        "desc": "A premium wearables item, model 13",
+        "price": 1269.84,
+        "stock": 39
+      },
+      {
+        "id": "WEA14",
+        "name": "Wearable 14",
+        "desc": "A premium wearables item, model 14",
+        "price": 975.11,
+        "stock": 13
+      },
+      {
+        "id": "WEA15",
+        "name": "Wearable 15",
+        "desc": "A premium wearables item, model 15",
+        "price": 2346.64,
+        "stock": 42
+      },
+      {
+        "id": "WEA16",
+        "name": "Wearable 16",
+        "desc": "A premium wearables item, model 16",
+        "price": 1724.34,
+        "stock": 0
+      },
+      {
+        "id": "WEA17",
+        "name": "Wearable 17",
+        "desc": "A premium wearables item, model 17",
+        "price": 1146.58,
+        "stock": 15
+      },
+      {
+        "id": "WEA18",
+        "name": "Wearable 18",
+        "desc": "A premium wearables item, model 18",
+        "price": 1391.63,
+        "stock": 10
+      },
+      {
+        "id": "WEA19",
+        "name": "Wearable 19",
+        "desc": "A premium wearables item, model 19",
+        "price": 2349.15,
+        "stock": 38
+      },
+      {
+        "id": "WEA20",
+        "name": "Wearable 20",
+        "desc": "A premium wearables item, model 20",
+        "price": 1561.56,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Audio Equipment",
+    "items": [
+      {
+        "id": "AUD01",
+        "name": "Audio Equipmen 1",
+        "desc": "A premium audio equipment item, model 1",
+        "price": 153.93,
+        "stock": 7
+      },
+      {
+        "id": "AUD02",
+        "name": "Audio Equipmen 2",
+        "desc": "A premium audio equipment item, model 2",
+        "price": 1582.29,
+        "stock": 42
+      },
+      {
+        "id": "AUD03",
+        "name": "Audio Equipmen 3",
+        "desc": "A premium audio equipment item, model 3",
+        "price": 422.47,
+        "stock": 39
+      },
+      {
+        "id": "AUD04",
+        "name": "Audio Equipmen 4",
+        "desc": "A premium audio equipment item, model 4",
+        "price": 1523.33,
+        "stock": 0
+      },
+      {
+        "id": "AUD05",
+        "name": "Audio Equipmen 5",
+        "desc": "A premium audio equipment item, model 5",
+        "price": 555.44,
+        "stock": 27
+      },
+      {
+        "id": "AUD06",
+        "name": "Audio Equipmen 6",
+        "desc": "A premium audio equipment item, model 6",
+        "price": 2430.18,
+        "stock": 43
+      },
+      {
+        "id": "AUD07",
+        "name": "Audio Equipmen 7",
+        "desc": "A premium audio equipment item, model 7",
+        "price": 1819.97,
+        "stock": 2
+      },
+      {
+        "id": "AUD08",
+        "name": "Audio Equipmen 8",
+        "desc": "A premium audio equipment item, model 8",
+        "price": 2221.23,
+        "stock": 0
+      },
+      {
+        "id": "AUD09",
+        "name": "Audio Equipmen 9",
+        "desc": "A premium audio equipment item, model 9",
+        "price": 1209.17,
+        "stock": 35
+      },
+      {
+        "id": "AUD10",
+        "name": "Audio Equipmen 10",
+        "desc": "A premium audio equipment item, model 10",
+        "price": 675.61,
+        "stock": 48
+      },
+      {
+        "id": "AUD11",
+        "name": "Audio Equipmen 11",
+        "desc": "A premium audio equipment item, model 11",
+        "price": 1999.58,
+        "stock": 5
+      },
+      {
+        "id": "AUD12",
+        "name": "Audio Equipmen 12",
+        "desc": "A premium audio equipment item, model 12",
+        "price": 2267.71,
+        "stock": 0
+      },
+      {
+        "id": "AUD13",
+        "name": "Audio Equipmen 13",
+        "desc": "A premium audio equipment item, model 13",
+        "price": 774.99,
+        "stock": 49
+      },
+      {
+        "id": "AUD14",
+        "name": "Audio Equipmen 14",
+        "desc": "A premium audio equipment item, model 14",
+        "price": 2018.75,
+        "stock": 22
+      },
+      {
+        "id": "AUD15",
+        "name": "Audio Equipmen 15",
+        "desc": "A premium audio equipment item, model 15",
+        "price": 203.03,
+        "stock": 24
+      },
+      {
+        "id": "AUD16",
+        "name": "Audio Equipmen 16",
+        "desc": "A premium audio equipment item, model 16",
+        "price": 609.88,
+        "stock": 0
+      },
+      {
+        "id": "AUD17",
+        "name": "Audio Equipmen 17",
+        "desc": "A premium audio equipment item, model 17",
+        "price": 74.05,
+        "stock": 32
+      },
+      {
+        "id": "AUD18",
+        "name": "Audio Equipmen 18",
+        "desc": "A premium audio equipment item, model 18",
+        "price": 1591.84,
+        "stock": 35
+      },
+      {
+        "id": "AUD19",
+        "name": "Audio Equipmen 19",
+        "desc": "A premium audio equipment item, model 19",
+        "price": 194.88,
+        "stock": 14
+      },
+      {
+        "id": "AUD20",
+        "name": "Audio Equipmen 20",
+        "desc": "A premium audio equipment item, model 20",
+        "price": 1400.56,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "category": "Home Office",
+    "items": [
+      {
+        "id": "HOM01",
+        "name": "Home Offic 1",
+        "desc": "A premium home office item, model 1",
+        "price": 744.76,
+        "stock": 43
+      },
+      {
+        "id": "HOM02",
+        "name": "Home Offic 2",
+        "desc": "A premium home office item, model 2",
+        "price": 533.89,
+        "stock": 25
+      },
+      {
+        "id": "HOM03",
+        "name": "Home Offic 3",
+        "desc": "A premium home office item, model 3",
+        "price": 2438.75,
+        "stock": 39
+      },
+      {
+        "id": "HOM04",
+        "name": "Home Offic 4",
+        "desc": "A premium home office item, model 4",
+        "price": 1225.92,
+        "stock": 0
+      },
+      {
+        "id": "HOM05",
+        "name": "Home Offic 5",
+        "desc": "A premium home office item, model 5",
+        "price": 1500.12,
+        "stock": 17
+      },
+      {
+        "id": "HOM06",
+        "name": "Home Offic 6",
+        "desc": "A premium home office item, model 6",
+        "price": 2091.61,
+        "stock": 50
+      },
+      {
+        "id": "HOM07",
+        "name": "Home Offic 7",
+        "desc": "A premium home office item, model 7",
+        "price": 2347.74,
+        "stock": 42
+      },
+      {
+        "id": "HOM08",
+        "name": "Home Offic 8",
+        "desc": "A premium home office item, model 8",
+        "price": 2284.51,
+        "stock": 0
+      },
+      {
+        "id": "HOM09",
+        "name": "Home Offic 9",
+        "desc": "A premium home office item, model 9",
+        "price": 1554.51,
+        "stock": 18
+      },
+      {
+        "id": "HOM10",
+        "name": "Home Offic 10",
+        "desc": "A premium home office item, model 10",
+        "price": 1959.73,
+        "stock": 31
+      },
+      {
+        "id": "HOM11",
+        "name": "Home Offic 11",
+        "desc": "A premium home office item, model 11",
+        "price": 1808.56,
+        "stock": 6
+      },
+      {
+        "id": "HOM12",
+        "name": "Home Offic 12",
+        "desc": "A premium home office item, model 12",
+        "price": 272.35,
+        "stock": 0
+      },
+      {
+        "id": "HOM13",
+        "name": "Home Offic 13",
+        "desc": "A premium home office item, model 13",
+        "price": 2246.32,
+        "stock": 16
+      },
+      {
+        "id": "HOM14",
+        "name": "Home Offic 14",
+        "desc": "A premium home office item, model 14",
+        "price": 289.77,
+        "stock": 38
+      },
+      {
+        "id": "HOM15",
+        "name": "Home Offic 15",
+        "desc": "A premium home office item, model 15",
+        "price": 2497.31,
+        "stock": 18
+      },
+      {
+        "id": "HOM16",
+        "name": "Home Offic 16",
+        "desc": "A premium home office item, model 16",
+        "price": 2381.96,
+        "stock": 0
+      },
+      {
+        "id": "HOM17",
+        "name": "Home Offic 17",
+        "desc": "A premium home office item, model 17",
+        "price": 442.43,
+        "stock": 16
+      },
+      {
+        "id": "HOM18",
+        "name": "Home Offic 18",
+        "desc": "A premium home office item, model 18",
+        "price": 2099.37,
+        "stock": 48
+      },
+      {
+        "id": "HOM19",
+        "name": "Home Offic 19",
+        "desc": "A premium home office item, model 19",
+        "price": 2169.88,
+        "stock": 8
+      },
+      {
+        "id": "HOM20",
+        "name": "Home Offic 20",
+        "desc": "A premium home office item, model 20",
+        "price": 1250.75,
+        "stock": 0
+      }
+    ]
+  }
+]
