@@ -25,7 +25,10 @@ hbs.registerHelper('json', function (context) {
 
 // In-memory storage
 const sessions = {};
-const COMPANY = { name: "AZDBlast Platform", logoUrl: "https://via.placeholder.com/200x60.png?text=Client+Company+Logo" };
+const COMPANY = { 
+  name: "Client Company Name", 
+  logoUrl: "/public/logo.svg" 
+};
 
 // Simulated product catalogconst 
 const catalog = JSON.parse(fs.readFileSync('./product_catalog.json', 'utf8'));

@@ -1,0 +1,30 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect x="0" y="0" width="200" height="60" rx="12" fill="url(#logoGradient)"/>
+  
+  <!-- Generic company icon -->
+  <g transform="translate(15, 15)">
+    <!-- Building/company symbol -->
+    <rect x="0" y="8" width="16" height="8" rx="1" fill="white" opacity="0.9"/>
+    <rect x="2" y="6" width="4" height="2" rx="1" fill="white" opacity="0.9"/>
+    <rect x="10" y="6" width="4" height="2" rx="1" fill="white" opacity="0.9"/>
+    <rect x="6" y="4" width="4" height="2" rx="1" fill="white" opacity="0.9"/>
+    <rect x="4" y="10" width="2" height="2" rx="0.5" fill="#2563eb"/>
+    <rect x="10" y="10" width="2" height="2" rx="0.5" fill="#2563eb"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="45" y="25" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="white" letter-spacing="-0.5">Client</text>
+  <text x="45" y="42" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="white" opacity="0.9" letter-spacing="-0.5">Logo</text>
+  
+  <!-- Generic badge -->
+  <rect x="140" y="15" width="45" height="20" rx="10" fill="white" opacity="0.2"/>
+  <text x="162.5" y="28" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">LOGO</text>
+</svg> 

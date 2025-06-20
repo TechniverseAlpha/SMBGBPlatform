@@ -53,43 +53,60 @@
 </head>
 <body>
   <header class="header">
-    <img src="{{company.logoUrl}}" alt="{{company.name}} Logo" class="logo">
-    <h1>{{company.name}} - Quote Request</h1>
+    <div class="header-content">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="{{company.logoUrl}}" alt="{{company.name}} Logo" class="logo">
+        <h1>{{company.name}} - Quote Request</h1>
+      </div>
+    </div>
   </header>
 
-  <section class="info">
-    <div><strong>Agent:</strong> {{agent.name}} &lt;{{agent.email}}&gt;</div>
-    <div><strong>Customer:</strong> {{customer.name}} &lt;{{customer.email}}&gt;</div>
-    <div><strong>Phone:</strong> {{customer.phone}}</div>
-  </section>
+  <div class="container">
+    <section class="info">
+      <h2>Request Information</h2>
+      <div><strong>Agent:</strong> {{agent.name}} &lt;{{agent.email}}&gt;</div>
+      <div><strong>Customer:</strong> {{customer.name}} &lt;{{customer.email}}&gt;</div>
+      <div><strong>Phone:</strong> {{customer.phone}}</div>
+    </section>
 
-  <form action="/submit-quote" method="post" class="quote-form">
-    <input type="hidden" name="sessionId" value="{{sessionId}}">
+    <form action="/submit-quote" method="post" class="quote-form">
+      <input type="hidden" name="sessionId" value="{{sessionId}}">
 
-    <div class="form-group">
-      <label for="category">Category</label>
-      <select id="category" onchange="updateProductList()">
-        {{#each catalog}}
-          <option value="{{this.category}}">{{this.category}}</option>
-        {{/each}}
-      </select>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" onchange="updateProductList()">
+          {{#each catalog}}
+            <option value="{{this.category}}">{{this.category}}</option>
+          {{/each}}
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="product">Product</label>
+        <select id="product"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="qty">Quantity</label>
+        <input type="number" id="qty" min="1" value="1">
+      </div>
+
+      <button type="button" onclick="addToQuote()">Add to Quote</button>
+
+      <ul id="quoteItems"></ul>
+
+      <button type="submit" class="submit-btn">Submit Quote</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="https://smbgrowthbooster.com/wp-content/uploads/2023/12/SMB-Logo-180-x-180-px-184-x-60-px-184-x-60-px-1.png" alt="SMB Growth Booster" class="footer-logo">
+      <p class="footer-text">Powered by SMB Growth Booster</p>
+      <div class="footer-powered-by">
+        <span>Your trusted partner for business growth solutions</span>
+      </div>
     </div>
-
-    <div class="form-group">
-      <label for="product">Product</label>
-      <select id="product"></select>
-    </div>
-
-    <div class="form-group">
-      <label for="qty">Quantity</label>
-      <input type="number" id="qty" min="1" value="1">
-    </div>
-
-    <button type="button" onclick="addToQuote()">Add to Quote</button>
-
-    <ul id="quoteItems"></ul>
-
-    <button type="submit" class="submit-btn">Submit Quote</button>
-  </form>
+  </footer>
 </body>
 </html>

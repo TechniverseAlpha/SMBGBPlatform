@@ -7,22 +7,39 @@
 </head>
 <body>
   <header class="header">
-    <img src="{{company.logoUrl}}" alt="{{company.name}} Logo" class="logo">
-    <h1>Quote {{quoteId}} Submitted</h1>
+    <div class="header-content">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="{{company.logoUrl}}" alt="{{company.name}} Logo" class="logo">
+        <h1>Quote {{quoteId}} Submitted</h1>
+      </div>
+    </div>
   </header>
 
-  <section class="summary">
-    <h2>Quote Summary</h2>
-    <ul>
-      {{#each lines}}
-        <li>{{name}} — Qty: {{qty}} — ${{price}} each</li>
-      {{/each}}
-    </ul>
-  </section>
+  <div class="container">
+    <section class="summary">
+      <h2>Quote Summary</h2>
+      <ul>
+        {{#each lines}}
+          <li>{{name}} — Qty: {{qty}} — R{{price}} each</li>
+        {{/each}}
+      </ul>
+    </section>
 
-  <section class="info">
-    <p><strong>Agent:</strong> {{agent.name}}</p>
-    <p><strong>Customer:</strong> {{customer.name}}</p>
-  </section>
+    <section class="info">
+      <h2>Contact Information</h2>
+      <p><strong>Agent:</strong> {{agent.name}}</p>
+      <p><strong>Customer:</strong> {{customer.name}}</p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="https://smbgrowthbooster.com/wp-content/uploads/2023/12/SMB-Logo-180-x-180-px-184-x-60-px-184-x-60-px-1.png" alt="SMB Growth Booster" class="footer-logo">
+      <p class="footer-text">Powered by SMB Growth Booster</p>
+      <div class="footer-powered-by">
+        <span>Your trusted partner for business growth solutions</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
