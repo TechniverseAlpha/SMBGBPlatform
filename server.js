@@ -39,12 +39,15 @@ const axios = require('axios');
 
  async function postToRespond(contactIdentifier, message) {
   try {
+
+     const apiKey = process.env.RESPOND_API_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTM0OTIsInNwYWNlSWQiOjI5NDcwNCwib3JnSWQiOjI5MDk4OSwidHlwZSI6ImFwaSIsImlhdCI6MTc1MDI2Mzc3NX0.owMR_Nc2PixsxEGiNTpboywwOA0DlH9VtCvFPPBmGxI';
+   
     await axios.post(
       `https://api.respond.io/v2/contact/${contactIdentifier}/comment`,
       { text: message }, // ← API expects "text", not "body"
       {
         headers: {
-          'Authorization': `Bearer ${process.env.RESPOND_API_KEY}`,
+          'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         }
       }
